@@ -73,7 +73,7 @@ $(document).ready(function(){
 	});
 
 
-	var mouseX = 0, mouseY = 0, limitX = 1500-10, limitY = 850-10; // Определяет границы, по которым будет двигаться объект
+	var mouseX = 0, mouseY = 0, limitX = 1500-10, limitY = 850-10;
     $(window).mousemove(function(e){
 
         mouseX = Math.min(e.pageX, limitX);
@@ -137,9 +137,3 @@ $(document).ready(function(){
     }, 30);
 
 });
-
-//    0 0
-//  0  -  0
-// 0 - - - 0
-//  0  -  0
-//    0 0
