@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: rgb(30, 30, 30);
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+.snake{
+
+}
+
+.snake .snake-segment{
+	background: white;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+
+	left: 200px;
+	top: 200px;
+
+	border-radius: 20px;
+}
+
+.snake .snake-head .snake-segment{
+	background: red;
+}
+
+.snake .snake-head .snake-segment{
+	background: rgb(190, 100, 100);
+}
+
+.snake .green{
+	background: green;
+}
+
+.snake .blue{
+	background: blue;
+}
+
+.container{
+	position: absolute;
+	top: 1000px;
+}
+
+.block{
+	position: absolute;
+	background: white;
+	width: 200px;
+	height: 40px;
+}
+
+#b1{
+
+	left: 100px;
+	top: 760px;
+
+}
+
+
+#b2{
+
+	left: 500px;
+	top: 760px;
+
+}
+
+#b3{
+
+	left: 400px;
+	top: 860px;
+
+}
+
+#b4{
+	left: 200px;
+	width: 499px;
+	top: 1060px;
+
+}
+
+
+#b5{
+	left: 0px;
+	width: 499px;
+	top: 1360px;
+
+}
+
+#b6{
+	left: 100px;
+	width: 100px;
+	top: 1760px;
+}
+
+
+#b7{
+	left: 0px;
+	width: 1000px;
+	top: 2000px;
+}
