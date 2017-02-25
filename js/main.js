@@ -4,7 +4,7 @@ function Snake(id){
 
 	var dl = 35;
 
-	var segmentsPosDegs = [0, 0, 0];
+	var segmentsPosDegs = [90, 90, 90];
 	
 	var prev = $(segments.get(0));
 
