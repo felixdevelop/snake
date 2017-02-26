@@ -4,7 +4,7 @@ function Snake(id){
 
 	var dl = 35;
 
-	var segmentsPosDegs = [90, 90, 90];
+	var segmentsPosDegs = [90, 90, 90, 90, 90, 90, 90];
 	
 	var prev = $(segments.get(0));
 
@@ -74,25 +74,25 @@ $(document).ready(function(){
 
 
 	var mouseX = 0, mouseY = 0, limitX = 1500-10, limitY = 850-10;
-    $(window).mousemove(function(e){
+    $(window).on("touchmove", function(e){
 
-        mouseX = Math.min(e.pageX, limitX);
-        mouseY = Math.min(e.pageY, limitY); 
+    	var t = e.changedTouches[0];
+
+        mouseX = Math.min(t.pageX, limitX);
+        mouseY = Math.min(t.pageY, limitY); 
         if (mouseX < 0) mouseX = 0;
         if (mouseY < 0) mouseY = 0;
-        if (mouseX < 0) mouseX = 0;
-        if (mouseY < 0) mouseY = 0; 
     });
 
 
     var fix = 0;
 
-    $(window).mousedown(function(e){
+    $(window).on("touchstart", function(e){
 
         fix = 1;
     });
 
-    $(window).mouseup(function(e){
+    $(window).on("touchend", function(e){
 
         fix = 0;
     });
